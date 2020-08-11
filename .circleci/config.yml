@@ -1,6 +1,6 @@
 version: 2
 jobs:
-  build:  
+  build:
     docker:
       - image: circleci/golang:1.8
     steps:
@@ -34,7 +34,7 @@ jobs:
           root: .
           paths:
             - docker-image
-  deploy:  
+  deploy:
     docker:
       - image: circleci/python:3.6.1
     environment:
